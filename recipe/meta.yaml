@@ -1,6 +1,6 @@
 {% set name = "bdbag" %}
-{% set version = "1.5.6" %}
-{% set sha256 = "ae057fec9640442ad039fe50b60afa1d71c0109f9163d182f4f4b27774bbc8b3" %}
+{% set version = "1.6.0" %}
+{% set sha256 = "87a1acbd3e48e1f399a2f7a4c07bb278df82256ed7c9328b2254cd05c8035498" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - bdbag = bdbag.bdbag_cli:main
     - bdbag-utils = bdbag.bdbag_utils:main
@@ -43,7 +43,7 @@ test:
 
 about:
   home: https://github.com/fair-research/bdbag
-  summary: 'A collection of software programs for working with BagIt packages.'
+  summary: A collection of software programs for working with BagIt packages.
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
