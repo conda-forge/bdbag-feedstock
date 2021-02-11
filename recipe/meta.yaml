@@ -25,6 +25,7 @@ requirements:
     - setuptools
   run:
     - python >=3
+    - setuptools
     - pytz
     - tzlocal
     - requests
