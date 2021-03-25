@@ -1,6 +1,6 @@
 {% set name = "bdbag" %}
-{% set version = "1.6.0" %}
-{% set sha256 = "87a1acbd3e48e1f399a2f7a4c07bb278df82256ed7c9328b2254cd05c8035498" %}
+{% set version = "1.6.1" %}
+{% set sha256 = "96188cf4e0bdff6c62e697dd8e41696c1b1a4202f21329b57f38a789b05397e7" %}
 
 package:
   name: {{ name|lower }}
