@@ -32,10 +32,6 @@ requirements:
     - certifi
     - bagit
     - bagit-profile
-    - boto3 >=1.9.5
-    - botocore
-    - awscli
-    - globus-sdk >=1.6.0
 
 test:
   imports:
