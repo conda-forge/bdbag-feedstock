@@ -1,6 +1,6 @@
 {% set name = "bdbag" %}
-{% set version = "1.6.4" %}
-{% set sha256 = "bd6fb725bf32cf8dc82ec95dd4aaec57b5615452b611447aefbd325a9583228e" %}
+{% set version = "1.7.0" %}
+{% set sha256 = "94134c84c1051b62ea487da18f7a841c04018587ea8e05d1c055d08763206708" %}
 
 package:
   name: {{ name|lower }}
@@ -24,9 +24,11 @@ requirements:
     - pip
     - setuptools
   run:
-    - python >=3.5
+    - python >=3.7
     - setuptools
     - pytz
+    - packaging
+    - importlib_metadata
     - tzlocal ==2.1
     - requests >=2.7.0
     - certifi
